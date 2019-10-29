@@ -56,3 +56,25 @@ button:focus{
         height: 50px;
     }
 }
+
+   .images{
+       #player{
+        display: block;
+        margin-left: 50%;
+        margin-right: 50%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+
+       }
+   }
+
+   .game {
+       .score, .level, .lives{    
+           color: $colorA;
+           margin-top: 50px;
+       }
+
+   }
+
+   
