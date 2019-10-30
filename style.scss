@@ -12,8 +12,13 @@ $colorC : lime;
 }
 
 body{
-    background-color: $colorB;
-    color: $colorB;
+    // background-color: $colorB;
+    // color: $colorB;
+    background-image: url("image/backg.gif");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 // .entry{
@@ -33,12 +38,38 @@ h1{
     font-weight: 500;
     padding: 20px;
     text-transform: uppercase;
-    border-radius: 6px;
+    border-radius: 12px;
     display: inline-block;
     transition: all 0.3s ease 0s;
+    position: absolute;
+    top: 0px;
 }
 
 #btn-enter:hover {
+    color: #bb0000 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    transition: all 0.3s ease 0s;
+}
+
+#btn-retry{
+    border: none;
+    background: #404040;
+    color: $colorB !important;
+    font-weight: 500;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+}
+
+#btn-retry:hover {
     color: #bb0000 !important;
     font-weight: 700 !important;
     letter-spacing: 3px;
@@ -71,7 +102,7 @@ button:focus{
 
    .game {
        .score, .level, .lives{    
-           color: $colorA;
+           color: $colorB;
            margin-top: 50px;
        }
 
